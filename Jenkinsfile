@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/your-username/your-repo.git'
+                git 'https://github.com/Vidhya2198/home'
             }
         }
         stage('Install Dependencies') {
@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run API Tests') {
             steps {
-                sh 'rspec tests/api_test_spec.rb'
+                sh 'rspec spec/test_api.rb'
             }
         }
     }
