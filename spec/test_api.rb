@@ -1,6 +1,5 @@
 require_relative '../pages/api_client'
 require 'rspec'
-$stdout.sync = true
 
 describe "GET API Tests" do
   before(:all) do

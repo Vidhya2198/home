@@ -1,6 +1,3 @@
-require 'rest-client'
-require 'json'
-
 class APIClient
   BASE_URL = "https://jsonplaceholder.typicode.com"  # Example API
 
@@ -12,4 +9,4 @@ class APIClient
     response = RestClient.get("#{BASE_URL}/users/#{user_id}")
     JSON.parse(response.body)
   end
-end #
+end 

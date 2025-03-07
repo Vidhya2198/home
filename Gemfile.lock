@@ -7,6 +7,7 @@ GEM
     http-accept (1.7.0)
     http-cookie (1.0.8)
       domain_name (~> 0.5)
+    json (2.9.0)
     logger (1.6.4)
     method_source (1.1.0)
     mime-types (3.6.0)
@@ -41,6 +42,7 @@ PLATFORMS
   x86_64-darwin-21
 
 DEPENDENCIES
+  json
   pry
   rest-client
   rspec
