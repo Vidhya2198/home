@@ -1,5 +1,6 @@
 require_relative '../pages/api_client'
 require 'rspec'
+require 'json'
 
 describe "GET API Tests" do
   before(:all) do

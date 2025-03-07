@@ -1,3 +1,4 @@
+require 'rest-client'
 class APIClient
   BASE_URL = "https://jsonplaceholder.typicode.com"  # Example API
 
