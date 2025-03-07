@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    environment {
+        GEM_HOME = "${HOME}/.gem"
+        PATH = "${GEM_HOME}/bin:${PATH}"
+    }
     stages {
         stage('Checkout Code') {
             steps {
@@ -8,6 +12,7 @@ pipeline {
         }
         stage('Install Dependencies') {
             steps {
+                sh 'gem install --user-install bundler:2.4.12'
                 sh 'bundle install'
             }
         }
