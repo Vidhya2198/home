@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Vidhya2198/home'
+                git branch: 'main', url: 'https://github.com/Vidhya2198/home'
             }
         }
         stage('Install Dependencies') {
